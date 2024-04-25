@@ -30,17 +30,17 @@ function Placeholder() {
     <h2>Cart totals</h2>
     <div className="cart-total-details">
     <p>SubTotal</p>
-    <p>${GettotalAmount()}</p>
+    <p>Rs{GettotalAmount()}</p>
     
     </div>
     <div className="cart-total-details">
       <p>Dilevery Fee</p>
-      <p>${GettotalAmount()===0?0:2}</p>
+      <p>Rs{GettotalAmount()===0?0:20}</p>
     </div>
       <hr />
     <div className="cart-total-details">
       <b>Total</b>
-      <b>${GettotalAmount()===0?0:GettotalAmount()+2}</b>
+      <b>Rs{GettotalAmount()===0?0:GettotalAmount()+60}</b>
     </div>
     
 <button onClick={()=>navigate('/Placeholder')}>PROCEED TO CHECKOUT</button>
